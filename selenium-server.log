@@ -1,0 +1,43 @@
+18:38:53.473 INFO - Selenium build info: version: '3.0.0', revision: '350cf60'
+18:38:53.474 INFO - Launching a standalone Selenium Server
+2019-07-30 18:38:53.488:INFO::main: Logging initialized @166ms
+18:38:53.527 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+18:38:53.527 INFO - Driver provider com.opera.core.systems.OperaDriver registration is skipped:
+Unable to create new instances on this machine.
+18:38:53.527 INFO - Driver class not found: com.opera.core.systems.OperaDriver
+18:38:53.527 INFO - Driver provider com.opera.core.systems.OperaDriver is not registered
+18:38:53.532 INFO - Driver provider org.openqa.selenium.safari.SafariDriver registration is skipped:
+ registration capabilities Capabilities [{browserName=safari, version=, platform=MAC}] does not match the current platform WIN10
+2019-07-30 18:38:53.559:INFO:osjs.Server:main: jetty-9.2.15.v20160210
+2019-07-30 18:38:53.574:INFO:osjsh.ContextHandler:main: Started o.s.j.s.ServletContextHandler@fc185{/,null,AVAILABLE}
+2019-07-30 18:38:53.751:INFO:osjs.ServerConnector:main: Started ServerConnector@653222{HTTP/1.1}{0.0.0.0:4444}
+2019-07-30 18:38:53.751:INFO:osjs.Server:main: Started @429ms
+18:38:53.752 INFO - Selenium Server is up and running
+18:38:55.168 INFO - SessionCleaner initialized with insideBrowserTimeout 0 and clientGoneTimeout 1800000 polling every 180000
+18:38:55.184 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Google Snapshot, browserName=chrome, javascriptEnabled=true, chromeOptions={args=[--headlesffs, window-size=1920,1080]}, platform=ANY}]])
+18:38:55.184 INFO - Executing: [new session: Capabilities [{acceptSslCerts=true, name=Google Snapshot, browserName=chrome, javascriptEnabled=true, chromeOptions={args=[--headlesffs, window-size=1920,1080]}, platform=ANY}]])
+18:38:55.190 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Google Snapshot, browserName=chrome, javascriptEnabled=true, chromeOptions={args=[--headlesffs, window-size=1920,1080]}, platform=ANY}]
+18:38:55.190 INFO - Creating a new session for Capabilities [{acceptSslCerts=true, name=Google Snapshot, browserName=chrome, javascriptEnabled=true, chromeOptions={args=[--headlesffs, window-size=1920,1080]}, platform=ANY}]
+Starting ChromeDriver 2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e) on port 46466
+Only local connections are allowed.
+Starting ChromeDriver 2.41.578737 (49da6702b16031c40d63e5618de03a32ff6c197e) on port 26869
+Only local connections are allowed.
+18:38:56.022 INFO - Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+18:38:56.022 INFO - Attempting bi-dialect session, assuming Postel's Law holds true on the remote end
+[1564492138.614][WARNING]: Timed out connecting to Chrome, retrying...
+[1564492138.777][WARNING]: Timed out connecting to Chrome, retrying...
+18:39:00.638 INFO - Detected dialect: OSS
+18:39:00.652 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Google Snapshot, browserName=chrome, javascriptEnabled=true, chromeOptions={args=[--headlesffs, window-size=1920,1080]}, platform=ANY}]]
+18:39:00.661 INFO - Executing: [get: http://google.com])
+18:39:00.790 INFO - Detected dialect: OSS
+18:39:00.791 INFO - Done: [new session: Capabilities [{acceptSslCerts=true, name=Google Snapshot, browserName=chrome, javascriptEnabled=true, chromeOptions={args=[--headlesffs, window-size=1920,1080]}, platform=ANY}]]
+18:39:00.796 INFO - Executing: [get: http://google.com])
+18:39:02.112 INFO - Done: [get: http://google.com]
+18:39:02.116 INFO - Executing: [get page source])
+18:39:02.150 INFO - Done: [get page source]
+18:39:02.264 INFO - Done: [get: http://google.com]
+18:39:02.646 INFO - Executing: [get page source])
+18:39:02.671 INFO - Done: [get page source]
+18:39:05.646 INFO - Executing: [delete session: 56e92328-d2c6-4079-af85-0ced84889e86])
+18:39:05.830 INFO - Executing: [delete session: f31ba941-c136-426b-9867-7efdee1ad19c])
+18:39:06.436 INFO - Done: [delete session: 56e92328-d2c6-4079-af85-0ced84889e86]

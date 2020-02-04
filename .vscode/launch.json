@@ -1,0 +1,52 @@
+{
+    // Use IntelliSense to learn about possible Node.js debug attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Nightwatch All",
+            "program": "${workspaceRoot}/node_modules/nightwatch/bin/runner.js",
+            "stopOnEntry": false,
+            "args": [
+                "--test"
+            ],
+            "runtimeExecutable": null,
+            "sourceMaps": false
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Nightwatch Current File",
+            "program": "${workspaceRoot}/node_modules/nightwatch/bin/runner.js",
+            "stopOnEntry": false,
+            "args": [
+                "--test",
+                "${file}"
+            ],
+            "runtimeExecutable": null,
+            "sourceMaps": false
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Nightwatch Update Current Snapshot",
+            "program": "${workspaceRoot}/snapshot.config.js",
+            "stopOnEntry": false,
+            "args": [
+                "--test",
+                "${file}"
+            ],
+            "runtimeExecutable": null,
+            "sourceMaps": false
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "Attach to Process",
+            "port": 5858
+        }
+    ]
+}

@@ -1,0 +1,1 @@
+(function () { process.env.UPDATE = 1; })()
