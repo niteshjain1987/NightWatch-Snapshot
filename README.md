@@ -38,17 +38,17 @@ Note-: **NightWatch** does not have snapshot feature. So, We are use **mocha** t
 
 As per over automation project. We have create "snapshot" folder under the "test" folder and follow the same structure as per Admin Console Menu Bar. 
 
-![](https://drive.google.com/file/d/1mbYN0X7iSU7iM2FUamaKk5KEQfn0ptGg/view?width=236&height=400)
 
+[![N|Solid](https://cdn.filestackcontent.com/pjD8BpNKSMehQjDmVb8y)](https://cdn.filestackcontent.com/pjD8BpNKSMehQjDmVb8y)
 We Need to add also Mocha Test files which use to take snapshot and store under the root folder "\_\_snapshots\_\_".
 
-![](https://drive.google.com/open?id=16-fplNmnTCcOepdvoOdA9DSslsnl_Flt)
+![(https://cdn.filestackcontent.com/BNWcbq1ERPK7yeQzAzkS)](https://cdn.filestackcontent.com/BNWcbq1ERPK7yeQzAzkS)
 
 If we are run automation code via visual code editor then you can setup lunch.json file which help to you  debug your test code with all file/indudal file.
 
 You can see below the settings of launch.json file.
 
-![](https://drive.google.com/open?id=1JEFIdasArk6FW-6fOjiO6LAa3wWiE-Vc&width=589&height=400)
+![(https://cdn.filestackcontent.com/qDjAHwHIQtKp2hmBdaEn)](https://cdn.filestackcontent.com/qDjAHwHIQtKp2hmBdaEn)
 
 * * *
 
@@ -61,7 +61,7 @@ After creating snapshot. some time we need to update snapshot due to improvement
 *   create root folder file(update\_snapshot.js) and paste code on it. → **(function(){ process.env.UPDATE\=1; })()**
 *   add in package.json
 
-      ![](https://drive.google.com/open?id=1fcxjQW9VWC7ck2RQL4b22vf9xCMCUG-I) 
+      ![(https://cdn.filestackcontent.com/TTvchMDTW6F5x87J0688)](https://cdn.filestackcontent.com/TTvchMDTW6F5x87J0688) 
 
 **\*\*we can update all snapshot by using → npm run snapshot-u**
 
@@ -69,10 +69,11 @@ After creating snapshot. some time we need to update snapshot due to improvement
 
      3. if we are use vscode then we need to update launch.json as per above information 
 
-      ![](https://drive.google.com/open?id=1A4JFIISkBl74kp0A_RVCVeEsLG1-iWvL)
+      ![(https://cdn.filestackcontent.com/uWX0pIUaSzKFyVKJGIYB)](https://cdn.filestackcontent.com/uWX0pIUaSzKFyVKJGIYB)
 
       and need to create file("snapshot.config.js") in root folder and paste below code.
 
-      ![](https://drive.google.com/open?id=15mttRGY7D-3RlZBGzH8eN429LUQOMdV9)
+      ![(https://cdn.filestackcontent.com/aTAGipEFQuSeHxnpPSQu)](https://cdn.filestackcontent.com/aTAGipEFQuSeHxnpPSQu)
 
 Important-: If we want to run only snapshot test then we will need to small change in nightwatch.json file.
+![(https://cdn.filestackcontent.com/EkBrPZffRv2ElZ0Qez36)](https://cdn.filestackcontent.com/EkBrPZffRv2ElZ0Qez36)
