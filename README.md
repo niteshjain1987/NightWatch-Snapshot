@@ -36,7 +36,7 @@ Note-: **NightWatch** does not have snapshot feature. So, We are use **mocha** t
 
 **Directory Structure **
 
-As per over automation project. We have create "snapshot" folder under the "test" folder and follow the same structure as per Admin Console Menu Bar. 
+As per over automation project. We have create "snapshot" folder under the "test" folder and follow the same structure as per below project menu bar. 
 
 
 [![N|Solid](https://cdn.filestackcontent.com/pjD8BpNKSMehQjDmVb8y)](https://cdn.filestackcontent.com/pjD8BpNKSMehQjDmVb8y)
