@@ -1,62 +1,51 @@
 {
-    "src_folders": [
-        "./example/test"
-    ],
-    "output_folder": "./reports",
-    "custom_commands_path": "",
-    "custom_assertions_path": "",
-    "globals_path": "",
-    "live_output": false,
-    "parallel_process_delay": 10,
-    "disable_colors": false,
-    "test_workers": {
-        "enabled": false,
-        "workers": 3
-    },
-    "selenium": {
-        "start_process": true,
-        "server_path": "config/selenium-server-standalone-3.0.0.jar",
-        "log_path": "",
-        "host": "127.0.0.1",
-        "port": 4444,
-        "cli_args": {
-            "webdriver.chrome.driver": "config/chromedriver-2.4.1.exe"
-        }
-    },
-    "test_settings": {
-        "default": {
-            "launch_url": "http://localhost",
-            "selenium_port": 4444,
-            "selenium_host": "127.0.0.1",
-            "screenshots": {
-                "enabled": true,
-                "on_failure": true,
-                "on_error": true,
-                "path": "./reports"
-            },
-            "end_session_on_fail": false,
-            "skip_testcases_on_fail": false,
-            "desiredCapabilities": {
-                "browserName": "chrome",
-                "javascriptEnabled": true,
-                "acceptSslCerts": true,
-                "chromeOptions": {
-                    "args": [
-                        "--headlesffs",
-                        "window-size=1920,1080"
-                    ]
-                }
-            }
-        },
-        "firefox": {
-            "desiredCapabilities": {
-                "browserName": "firefox",
-                "javascriptEnabled": true,
-                "acceptSslCerts": true,
-                "globals": {
-                    "env": "chrome"
-                }
-            }
-        }
+  "src_folders" : ["./tests"],
+  "output_folder" : "./reports",
+  "custom_commands_path" : "./customCommand",
+
+  "custom_assertions_path" : "",
+  "globals_path" : "",
+  "live_output" : false,
+  "parallel_process_delay" : 10,
+  "disable_colors": false,
+  "test_workers": {
+    "enabled": false,
+    "workers": "auto"
+  },
+  "selenium" : {
+    "start_process" : true,
+    "server_path" : "config/selenium-server-standalone-3.1.jar",
+    "log_path" : "",
+    "host" : "127.0.0.1",
+    "port" : 4444,
+    "cli_args" : {
+     
+      "webdriver.chrome.driver" : "config/chromedriver-2.4.1.exe"      
     }
+  },
+  "test_settings": {
+    "default": {
+      "launch_url": "http://localhost",
+      "selenium_port": 4444,
+      "selenium_host": "127.0.0.1",
+      "screenshots" : {
+        "enabled" : true,
+        "on_failure" : true,
+        "on_error" : true,
+        "path" : "./reports"
+      },
+      "end_session_on_fail": false,
+      "skip_testcases_on_fail":false,
+      "desiredCapabilities" : {
+        "browserName" : "chrome",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true
+    } },
+    "firefox": {
+      "desiredCapabilities": {
+        "browserName": "firefox",
+        "marionette": true
+      }
+    }  
+  }
 }

@@ -1,39 +1,44 @@
-var snapshotConfig = require('./snapshot.config');
-var update_snapshotConfig = require('./update_snapshot');
+var snapshotConfig = require("./snapshot.config");
+var update_snapshotConfig = require("./update_snapshot");
 function globalMochaHandler(fileName, mocha) {
-    //fileName=./mocha-snapshot/advance-workflow.jest.js
-    return new Promise(function (resolve, reject) {
-        try {
-            mocha.addFile(fileName);
-            mochaRun();
-            resolve('done');
-        }
-        catch (err) {
-            resolve('fail');
-        }
-    })
-}
-function mochaRun(mocha) {
-    mocha.run()
-        .on('test', function (test) {
-            console.log('Test started: ' + test.title);
+  //fileName=./mocha-snapshot/xxx.jest.js
+  return new Promise(function (resolve, reject) {
+    function mochaRun(mocha) {
+      mocha
+        .run()
+        .on("test", function (test) {
+          // eslint-disable-next-line
+          console.log("Test started: " + test.title);
         })
-        .on('test end', function (test) {
-            console.log('Test done: ' + test.title);
+        .on("test end", function (test) {
+          // eslint-disable-next-line
+          console.log("Test done: " + test.title);
         })
-        .on('pass', function (test) {
-            console.log(test);
+        .on("pass", function (test) {
+          // eslint-disable-next-line
+          console.log(test);
         })
-        .on('fail', function (test, err) {
-            console.log(err);
+        .on("fail", function (test, err) {
+          // eslint-disable-next-line
+          console.log(err);
         })
-        .on('end', function () {
-            console.log('All done');
+        .on("end", function () {
+          // eslint-disable-next-line
+          console.log("All done");
         });
+    }
+    try {
+      mocha.addFile(fileName);
+      mochaRun(mocha);
+      resolve("done");
+    } catch (err) {
+      resolve("fail");
+    }
+  });
 }
+
 module.exports = {
-    snapshotConfig: snapshotConfig,
-    update_snapshotConfig: update_snapshotConfig,
-    globalMochaHandler: globalMochaHandler,
-    mochaRun: mochaRun
+  snapshotConfig: snapshotConfig,
+  update_snapshotConfig: update_snapshotConfig,
+  globalMochaHandler: globalMochaHandler,
 };

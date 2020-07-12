@@ -1,24 +1,51 @@
 {
-  "name": "nightwatch-snapshot",
+  "name": "test_auto",
   "version": "1.0.0",
-  "description": "NightWatch-Snapshot",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "nightwatch": "nightwatch -c example/nightwatch.conf.js -e chrome",
-    "snapshot": "nightwatch -c example/test -e chrome",
-    "snapshot-u": "nightwatch -c example/update_snapshot.js example/test -e chrome"
+    "nightwatch": "nightwatch -c tests/nightwatch.conf.js -e chrome",
+    "lint:all": "node_modules/.bin/eslint . --fix",
+    "lint:nowarn": "node_modules/.bin/eslint . --fix --quiet",
+    "snapshot": "nightwatch -c tests -e chrome",
+    "snapshot-u": "nightwatch -c update_snapshot.js tests -e chrome"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:nowarn",
+      "pre-push": ""
+    }
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "chromedriver": "^75.1.0",
-    "geckodriver": "^1.16.2",
-    "html-to-json": "^0.6.0",
-    "jsdom": "^15.1.1",
-    "jsdom-global": "^3.0.2",
-    "mocha": "^6.2.0",
-    "nightwatch": "^1.1.13",
-    "selenium-server": "^3.141.59",
+  "devDependencies": {
+    "chromedriver": "^2.41.0",
+    "eslint": "^5.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-node": "^9.0.1",
+    "eslint-plugin-promise": "^4.1.1",
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-standard": "^4.0.0",
+    "geckodriver": "^1.19.1",
+    "html-dnd": "^1.2.0",
+    "husky": "^2.3.0",
+    "jsdom": "13.2.0",
+    "jsdom-global": "3.0.2",
+    "nightwatch": "^0.9.21",
+    "selenium-server": "^3.14.0",
+    "selenium-server-standalone-jar": "^3.141.59",
     "snap-shot": "^2.17.0"
+  },
+  "dependencies": {
+    "clean-html": "^1.5.0",
+    "clipboardy": "^1.2.3",
+    "html-to-json": "^0.6.0",
+    "mocha": "^6.1.4",
+    "node-cmd": "^3.0.0",
+    "request": "^2.88.0",
+    "speakeasy": "^2.0.0",
+    "twilio": "^2.11.1"
   }
 }
