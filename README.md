@@ -39,10 +39,10 @@ Note-: **NightWatch** does not have snapshot feature. So, We are use **mocha** t
 As per over automation project. We have create "snapshot" folder under the "test" folder and follow the same structure as per below project menu bar. 
 
 
-[![N|Solid](https://cdn.filestackcontent.com/pjD8BpNKSMehQjDmVb8y)](https://cdn.filestackcontent.com/pjD8BpNKSMehQjDmVb8y)
+[![N|Solid](https://cdn.filestackcontent.com/solmjUZXTPWZgTNppBmW)](https://cdn.filestackcontent.com/solmjUZXTPWZgTNppBmW)
 We Need to add also Mocha Test files which use to take snapshot and store under the root folder "\_\_snapshots\_\_".
 
-![(https://cdn.filestackcontent.com/BNWcbq1ERPK7yeQzAzkS)](https://cdn.filestackcontent.com/BNWcbq1ERPK7yeQzAzkS)
+![(https://cdn.filestackcontent.com/XGkI0wDrQoGDSp2djINg)](https://cdn.filestackcontent.com/XGkI0wDrQoGDSp2djINg)
 
 If we are run automation code via visual code editor then you can setup lunch.json file which help to you  debug your test code with all file/indudal file.
 
@@ -73,7 +73,7 @@ After creating snapshot. some time we need to update snapshot due to improvement
 
       and need to create file("snapshot.config.js") in root folder and paste below code.
 
-      ![(https://cdn.filestackcontent.com/aTAGipEFQuSeHxnpPSQu)](https://cdn.filestackcontent.com/aTAGipEFQuSeHxnpPSQu)
+      ![(https://cdn.filestackcontent.com/Hh3PNxKmSo2pSFRA9YeM)](https://cdn.filestackcontent.com/Hh3PNxKmSo2pSFRA9YeM)
 
 Important-: If we want to run only snapshot test then we will need to small change in nightwatch.json file.
 ![(https://cdn.filestackcontent.com/EkBrPZffRv2ElZ0Qez36)](https://cdn.filestackcontent.com/EkBrPZffRv2ElZ0Qez36)
