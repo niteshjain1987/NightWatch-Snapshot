@@ -31,7 +31,7 @@
     "geckodriver": "^1.19.1",
     "html-dnd": "^1.2.0",
     "husky": "^2.3.0",
-    "jsdom": "13.2.0",
+    "jsdom": "16.5.0",
     "jsdom-global": "3.0.2",
     "nightwatch": "^0.9.21",
     "selenium-server": "^3.14.0",
