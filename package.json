@@ -33,7 +33,7 @@
     "husky": "^2.3.0",
     "jsdom": "13.2.0",
     "jsdom-global": "3.0.2",
-    "nightwatch": "^0.9.21",
+    "nightwatch": "^2.3.9",
     "selenium-server": "^3.14.0",
     "selenium-server-standalone-jar": "^3.141.59",
     "snap-shot": "^2.17.0"
